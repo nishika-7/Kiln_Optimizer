@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+catboost
+python-dotenv
+fastapi
+uvicorn
+strands-agents
+joblib
+tensorflow
+keras
+cedarpy
+strands-agents[ollama]
+
