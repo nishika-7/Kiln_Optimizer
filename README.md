@@ -77,8 +77,5 @@ tests/        safety and scripted-mode tests
 ## Limitations (please read)
 
 - The training data is **simulated**, so the numbers show the method, not a real kiln.
-- The defect model is less accurate than the energy model.
-- The safety limits in `policies/safety.cedar` and `src/kiln/config.py` are **placeholders**; real limits must come from
-  a ceramics reference or the kiln manufacturer. A human operator must review any schedule before it is loaded into a real controller.
 - The optimizer minimizes energy under a defect target; firing time is not constrained.
 - The live agent needs an LLM backend (Groq key, local Ollama or Bedrock); otherwise it falls back to the scripted demo.
