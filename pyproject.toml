@@ -17,14 +17,19 @@ dependencies = [
     "pandas>=3.0.6",
     "python-dotenv>=1.2.4",
     "scikit-learn>=1.9.1",
-    "strands-agents[ollama]>=1.59.0",
+    "strands-agents[ollama,openai]>=1.59.0",
     "tensorflow>=2.21.0",
     "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
-kiln-optimizer = "kiln_optimizer:main"
+kiln-optimizer = "kiln_optimizer.agent:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

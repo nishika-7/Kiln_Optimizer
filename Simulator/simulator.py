@@ -1,12 +1,4 @@
-"""Ground-truth kiln simulator for the earth.csv columns.
 
-true_fn(table) returns (energy_kwh, defect_rate_pct) for a table or dict that has
-the job columns and the schedule columns below. It works on single values or arrays.
-
-Used twice:
-  1. generate.py calls it (with noise) to build the training CSV.
-  2. Later, call it with noise=False to grade the optimizer's plans.
-"""
 import numpy as np
 
 CLAYS = ["earthenware", "stoneware", "porcelain"]

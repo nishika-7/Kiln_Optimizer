@@ -1,8 +1,4 @@
-"""Build a new training CSV with the same columns as earth.csv, but from a known simulator
-with low noise.
 
-Run:  python generate.py        (writes earth_v2.csv in the current folder)
-"""
 import numpy as np
 import pandas as pd
 
